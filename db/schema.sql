@@ -3,15 +3,15 @@ DROP DATABASE employee_tracker_db;
 CREATE DATABASE employee_tracker_db;
 
 USE employee_tracker_db;
---comments 
-CREATE TABLE department ( 
+
+CREATE TABLE department (    -- <= Table creation named 'department'
 
     id INT AUTO_INCREMENT NOT NULL, 
     name VARCHAR(30)
     PRIMARY KEY (id)
 );
 
-CREATE TABLE roles (
+CREATE TABLE roles (          -- <= Table creation named 'roles'
     id INT AUTO_INCREMENT NOT NULL,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE roles (
     REFERENCES department (id)
 );
 
-CREATE TABLE employee (
+CREATE TABLE employee (          -- <= Table creation named 'employee'
     id INT AUTO_INCREMENT NOT NULL,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
