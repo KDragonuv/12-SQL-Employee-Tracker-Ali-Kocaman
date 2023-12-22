@@ -6,4 +6,4 @@ const addRoleQuery = 'INSERT INTO roles (title, salary, department_id) VALUES (?
 const addEmployeeQuery = 'INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)';
 const updateEmployeeRoleQuery = 'UPDATE employees SET role_id = ? WHERE employee_id = ?';
 
-module.exports = { viewDepartmentsQuery, viewRolesQuery, viewEmployeesQuery, addDepartmentQuery, addRoleQuery, addEmployeeQuery, up};   // <= defines object, holds the exported values and functions.
+module.exports = { viewDepartmentsQuery, viewRolesQuery, viewEmployeesQuery, addDepartmentQuery, addRoleQuery, addEmployeeQuery, updateEmployeeRoleQuery};   // <= defines object, holds the exported values and functions.
