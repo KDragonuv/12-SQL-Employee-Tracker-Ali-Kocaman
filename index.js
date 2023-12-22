@@ -1,7 +1,8 @@
 const inquirer = require('inquirer');
 const { initializeDatabase, viewDepartments, viewRoles, viewEmployees, addDepartment, addRole, addEmployee, updateEmployeeRole } = require('./db/db');
 
-function startApp() {
+async function startApp() { 
+  await initializeDatabase();
     inquirer
       .prompt([
         {
