@@ -30,12 +30,6 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 
-## What the finished product should look like 
-
-![](mysql-menu)
-
-![](employee-tracker)
-
 ## Installation 
 
 Open `terminal` window after fork.
